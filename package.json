@@ -1,0 +1,36 @@
+{
+  "name": "hydrated-pig",
+  "version": "1.0.0",
+  "description": "front end",
+  "main": "index.js",
+  "scripts": {
+    "notes": "pnpm -F @hydrated-pig/notes docs:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HydratedPig/HydratedFrontEnd.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-next",
+    "leetcode",
+    "javascript",
+    "etc"
+  ],
+  "author": "HydratedPig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HydratedPig/HydratedFrontEnd/issues"
+  },
+  "homepage": "https://github.com/HydratedPig/HydratedFrontEnd#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3",
+    "typescript-plugin-css-modules": "^3.4.0",
+    "webpack": "^5.0.0",
+    "@hydrated-pig/eslint-config": "workspace:*"
+  },
+  "dependencies": {
+    "nprogress": "^1.0.0-1"
+  }
+}

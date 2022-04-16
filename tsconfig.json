@@ -1,0 +1,50 @@
+{
+  // 废案，具体见 @hydrated-pig/typescript/README.md
+  // "extends": "@hydrated-pig/typescript",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDir": "./",
+    "allowJs": true,
+    "alwaysStrict": true,
+    "checkJs": true,
+    "composite": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    // 不允许隐式具有 "any" 类型
+    "noImplicitAny": true,
+    // 不允许隐式的 this
+    "noImplicitThis": true,
+    "typeRoots" : ["**/*/typings"],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "paths": {
+      "@hydrated-packages/*": [
+        "packages/*/src"
+      ],
+      "@hydrated-apps/*": [
+        "apps/*/src"
+      ]
+    },
+  },
+  "lib": [
+    "esnext",
+    "dom",
+    "dom.iterable",
+    "scripthost"
+  ],
+  "include": ["packages/*/src", "apps/**/*", "apps/notes/.vuepress/**/*"],
+  "exclude": ["node-modules"]
+}
