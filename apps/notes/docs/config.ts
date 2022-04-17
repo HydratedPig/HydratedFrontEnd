@@ -1,5 +1,6 @@
 import { defineUserConfig } from 'vuepress';
 import type { DefaultThemeOptions } from 'vuepress';
+import { navbar } from './router';
 
 export default defineUserConfig<DefaultThemeOptions>({
   // 站点配置
@@ -11,13 +12,11 @@ export default defineUserConfig<DefaultThemeOptions>({
   theme: '@vuepress/theme-default',
   themeConfig: {
     home: '/',
-    navbar: [
-      { text: 'Vue.js 设计与实现', link: 'vue-design' },
-      {
-        text: 'xxxx',
-        link: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-      },
-    ],
+    navbar,
     logo: 'https://vuejs.org/images/logo.png',
+    repo: 'https://github.com/HydratedPig/HydratedFrontEnd/tree/master/apps/notes',
+    docsBranch: 'master',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/:path',
   },
 });
