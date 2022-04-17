@@ -2,6 +2,17 @@
 
 咱写 ```blog``` 的地方，记录一些学习笔记之类的
 
+# Install
+first install [pnpm]
+> npm i -g pnpm
+
+then run
+> pnpm install
+
+after that you can run vuepress to launch the blog
+> pnpm notes
+
+
 # 学习计划
 ### 三板斧
 - [ ] Javascript
