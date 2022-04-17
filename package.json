@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/HydratedPig/HydratedFrontEnd#readme",
   "devDependencies": {
+    "@hydrated-pig/eslint-config": "workspace:*",
     "typescript": "^4.6.3",
     "typescript-plugin-css-modules": "^3.4.0",
-    "webpack": "^5.0.0",
-    "@hydrated-pig/eslint-config": "workspace:*"
+    "webpack": "^5.0.0"
   },
   "dependencies": {
-    "nprogress": "^1.0.0-1"
+    "nprogress": "^0.2.0"
   }
 }
