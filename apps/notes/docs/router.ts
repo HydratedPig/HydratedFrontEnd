@@ -11,10 +11,17 @@ const vueDesign: NavbarConfig = [
   { text: '服务端渲染', link: 'ssr.md' },
 ];
 
+const hitThePit: NavbarConfig = [{ text: '2022.04.17', link: '2022-04-17.md' }];
+
 export const navbar: Navbar = enhanceNavbar([
   {
     text: 'Vue.js 设计与实现',
     link: '/vue-design',
     children: vueDesign,
+  },
+  {
+    text: '踩坑记录',
+    link: '/hit-the-pit',
+    children: hitThePit,
   },
 ]);
