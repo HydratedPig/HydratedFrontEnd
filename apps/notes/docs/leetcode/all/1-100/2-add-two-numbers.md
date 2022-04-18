@@ -45,3 +45,6 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
   return l3.next;
 };
 ```
+
+## 补充
+上面说的[数字相加再逆序](#思路)是我疏忽了，忘记考虑大数相加的问题了，看了[评论区](https://leetcode-cn.com/problems/add-two-numbers/comments/)被啪啪啪打脸
