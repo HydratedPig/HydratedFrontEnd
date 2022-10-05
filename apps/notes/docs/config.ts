@@ -1,5 +1,5 @@
-import { defineUserConfig } from 'vuepress';
 import type { DefaultThemeOptions } from 'vuepress';
+import { defineUserConfig } from 'vuepress';
 import { navbar } from './router';
 
 export default defineUserConfig<DefaultThemeOptions>({

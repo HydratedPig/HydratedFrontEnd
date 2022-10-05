@@ -35,6 +35,7 @@ function recursiveNavbarGroup(
 ): NavbarConfig {
   return navbar.map((nav) => {
     if (typeof nav === 'string') {
+      // 借鉴 vuerouter
       return joinLeadAndTrail(parent, nav);
     }
     handleNavLink(nav as NavLink, parent);

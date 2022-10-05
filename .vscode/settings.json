@@ -1,5 +1,10 @@
 {
   "cSpell.words": [
     "npmjs"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true,
+  },
 }

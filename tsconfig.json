@@ -1,5 +1,5 @@
 {
-  // 废案，具体见 @hydrated-pig/typescript/README.md
+  // extends 为废案，具体见 @hydrated-pig/typescript/README.md
   // "extends": "@hydrated-pig/typescript",
   "compilerOptions": {
     "baseUrl": "./",
