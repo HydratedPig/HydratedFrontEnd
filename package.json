@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "notes": "pnpm -F @hydrated-apps/notes docs:dev",
+    "demos:bundle": "pnpm -F @hydrated-demos/rollup bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
