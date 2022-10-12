@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@hydrated-pig/eslint-config': workspace:*
+      '@hydrated-packages/eslint-config': workspace:*
       nprogress: ^0.2.0
       typescript: ^4.6.3
       typescript-plugin-css-modules: ^3.4.0
@@ -12,7 +12,7 @@ importers:
     dependencies:
       nprogress: registry.npmjs.org/nprogress/0.2.0
     devDependencies:
-      '@hydrated-pig/eslint-config': link:packages/eslint-config
+      '@hydrated-packages/eslint-config': link:packages/eslint-config
       typescript: registry.npmjs.org/typescript/4.6.3
       typescript-plugin-css-modules: registry.npmjs.org/typescript-plugin-css-modules/3.4.0_typescript@4.6.3
       webpack: registry.npmjs.org/webpack/5.72.0
@@ -28,6 +28,12 @@ importers:
       '@vuepress/shared': registry.npmjs.org/@vuepress/shared/2.0.0-beta.38
       '@vuepress/theme-default': registry.npmjs.org/@vuepress/theme-default/2.0.0-beta.38_webpack@5.72.0
       vuepress: registry.npmjs.org/vuepress/2.0.0-beta.39_webpack@5.72.0
+
+  demos/rollup:
+    specifiers:
+      rollup: ^3.1.0
+    devDependencies:
+      rollup: registry.npmjs.org/rollup/3.1.0
 
   packages/eslint-config:
     specifiers:
@@ -3241,6 +3247,16 @@ packages:
     name: rollup
     version: 2.70.2
     engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: registry.npmjs.org/fsevents/2.3.2
+    dev: true
+
+  registry.npmjs.org/rollup/3.1.0:
+    resolution: {integrity: sha512-GEvr+COcXicr4nuih6mpt2Eydq5lZ72z0RrKx1H4/Q2ouT34OHrIIJ9OUj2sZqUhq7QL8Hp8Q8BoWbjL/6ccRQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/rollup/-/rollup-3.1.0.tgz}
+    name: rollup
+    version: 3.1.0
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: registry.npmjs.org/fsevents/2.3.2

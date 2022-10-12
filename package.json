@@ -1,10 +1,10 @@
 {
-  "name": "hydrated-pig",
+  "name": "hydrated-fe",
   "version": "1.0.0",
   "description": "front end",
   "main": "index.js",
   "scripts": {
-    "notes": "pnpm -F @hydrated-pig/notes docs:dev",
+    "notes": "pnpm -F @hydrated-apps/notes docs:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/HydratedPig/HydratedFrontEnd#readme",
   "devDependencies": {
-    "@hydrated-pig/eslint-config": "workspace:*",
+    "@hydrated-packages/eslint-config": "workspace:*",
     "typescript": "^4.6.3",
     "typescript-plugin-css-modules": "^3.4.0",
     "webpack": "^5.0.0"

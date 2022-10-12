@@ -1,5 +1,5 @@
 {
-  "name": "@hydrated-pig/eslint-config",
+  "name": "@hydrated-packages/eslint-config",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

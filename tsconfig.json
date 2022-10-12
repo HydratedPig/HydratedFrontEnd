@@ -36,6 +36,9 @@
       ],
       "@hydrated-apps/*": [
         "apps/*/src"
+      ],
+      "@hydrated-demos/*": [
+        "demos/*/src"
       ]
     },
   },

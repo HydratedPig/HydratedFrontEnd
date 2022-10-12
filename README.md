@@ -20,8 +20,8 @@ after that you can run vuepress to launch the blog
 
 ### FE 三板斧
 
-- [ ] [Javascript](./apps/notes/docs/fe-quick-start/javascript/README.md)
-- [ ] [Typescript](./apps/notes/docs/fe-quick-start/typescript/README.md)
+- [ ] [JavaScript](./apps/notes/docs/fe-quick-start/javascript/README.md)
+- [ ] [TypeScript](./apps/notes/docs/fe-quick-start/typescript/README.md)
 - [ ] [HTML5](./apps/notes/docs/fe-quick-start/html/README.md)
 - [ ] [CSS](./apps/notes/docs/fe-quick-start/css/README.md)
 
@@ -32,7 +32,7 @@ after that you can run vuepress to launch the blog
 
 ### 基础
 
-- [ ] 设计模式
+- [ ] 《JavaScript 设计模式与开发实践》
 - [ ] Leetcode
 - [ ] 《计算机网络》
 - [ ] 《浏览器工作原理》

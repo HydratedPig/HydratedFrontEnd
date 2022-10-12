@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@hydrated-pig'],
+  extends: ['@hydrated-packages'],
 };
