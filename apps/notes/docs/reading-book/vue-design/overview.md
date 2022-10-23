@@ -89,3 +89,44 @@ export function handleError(err) {
 ```
 
 ## 第三章 vue.js 3 的设计思路
+
+Q: 什么是虚拟 DOM
+A: 用来描述 UI DOM 结构的 JavaScript 对象
+Q: h 函数是什么？
+A: 辅助创建虚拟 DOM 的工具函数，具体定义见 [Github](https://github.com/vuejs/core/blob/main/packages/runtime-core/src/h.ts)
+Q: 什么是渲染器？
+A: 把虚拟 DOM 转成真实的 DOM 函数
+
+```js
+function renderer(vnode, container) {
+  const el = document.createdElement(vnode.tag);
+  // 处理 vnode 其他属性为 dom 真实的属性
+  container.appendChild(el);
+}
+```
+
+Q: 什么是组件
+A: 一组 DOM 元素的封装
+
+```js
+function MyComponent() {
+  return h(
+    "div",
+    {
+      onClick: () => console.log("click div"),
+    },
+    ["click me"]
+  );
+}
+function renderer(vnode, container) {
+  if (typeof vnode.tag === "string") {
+    mountElement(vnode, container);
+  } else {
+    mountComponent(vnode, container);
+  }
+}
+function mountComponent(vnode, container) {
+  const subtree = vnode.tag();
+  renderer(subtree, container);
+}
+```

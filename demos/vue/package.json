@@ -1,0 +1,19 @@
+{
+  "name": "@hydrated-demos/vue",
+  "version": "1.0.0",
+  "description": "demo of vue",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "rollup --config --bundleConfigAsCjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "vue"
+  ],
+  "author": "HydratedPig",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^3.1.0"
+  }
+}
