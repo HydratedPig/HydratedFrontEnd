@@ -49,5 +49,5 @@
     "scripthost"
   ],
   "include": ["packages/*/src", "apps/**/*", "apps/notes/.vuepress/**/*"],
-  "exclude": ["node-modules"]
+  "exclude": ["node-modules", "dist"]
 }
