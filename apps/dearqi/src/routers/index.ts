@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import routes from './routes';
+import routes, { dynamicRoutes } from './routes';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -10,5 +10,13 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   next();
 });
+
+function addDynamicRoutes() {
+  dynamicRoutes.forEach((route) => {
+    router.addRoute(route);
+  });
+}
+
+addDynamicRoutes();
 
 export default router;

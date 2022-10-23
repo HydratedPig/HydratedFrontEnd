@@ -1,5 +1,5 @@
 <template>
-  <router-link to="">
+  <router-link to="Three">
     <img src="/vite.svg" class="logo" alt="Vite logo" />
   </router-link>
   <router-link to="">

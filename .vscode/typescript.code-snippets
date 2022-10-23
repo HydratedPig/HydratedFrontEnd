@@ -6,4 +6,20 @@
       "/*#__PURE__*/ $1",
     ],
   },
+  "vue template": {
+    "scope": "vue",
+    "prefix": "<template>",
+    "body": [
+      "<template>",
+      "  $2",
+      "</template>",
+      "",
+      "<script lang=\"ts\" setup>",
+      "$1",
+      "</script>",
+      "<style scoped>",
+      "  $3",
+      "</style>"
+    ]
+  }
 }

@@ -18,6 +18,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    // "importHelpers": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
     // 不允许隐式具有 "any" 类型
@@ -37,9 +38,9 @@
       // "@hydrated-apps/*": [
       //   "apps/*/src"
       // ],
-      // "@hydrated-apps/dearqi/*": [
-      //   "apps/dearqi/src/*"
-      // ],
+      "@hydrated-apps/dearqi/*": [
+        "apps/dearqi/src/*"
+      ],
       // "@hydrated-demos/*": [
       //   "demos/*/src"
       // ]
