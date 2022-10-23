@@ -1,7 +1,7 @@
 {
   "For Rollup Tree-Shaking": {
     "scope": "javascript,typescript,typescriptreact,javascriptreact",
-    "prefix": "/*#__PURE__*/",
+    "prefix": "PURE",
     "body": [
       "/*#__PURE__*/ $1",
     ],

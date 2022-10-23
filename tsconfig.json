@@ -31,15 +31,18 @@
       }
     ],
     "paths": {
-      "@hydrated-packages/*": [
-        "packages/*/src"
-      ],
-      "@hydrated-apps/*": [
-        "apps/*/src"
-      ],
-      "@hydrated-demos/*": [
-        "demos/*/src"
-      ]
+      // "@hydrated-packages/*": [
+      //   "packages/*/src"
+      // ],
+      // "@hydrated-apps/*": [
+      //   "apps/*/src"
+      // ],
+      // "@hydrated-apps/dearqi/*": [
+      //   "apps/dearqi/src/*"
+      // ],
+      // "@hydrated-demos/*": [
+      //   "demos/*/src"
+      // ]
     },
   },
   "lib": [
@@ -48,6 +51,6 @@
     "dom.iterable",
     "scripthost"
   ],
-  "include": ["packages/*/src", "apps/**/*", "apps/notes/.vuepress/**/*"],
+  "include": ["packages/*/src", "apps/*/src", "apps/notes/.vuepress/**/*"],
   "exclude": ["node-modules", "dist"]
 }

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "notes": "pnpm -F @hydrated-apps/notes docs:dev",
+    "dearqi:dev": "pnpm -F @hydrated-apps/dearqi dev",
+    "dearqi:build": "pnpm -F @hydrated-apps/dearqi build",
     "demos:bundle": "pnpm -F @hydrated-demos/rollup bundle",
     "eslint:build": "pnpm -F @hydrated-packages/eslint-config build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -40,6 +42,8 @@
     "webpack": "^5.0.0"
   },
   "dependencies": {
-    "nprogress": "^0.2.0"
+    "nprogress": "^0.2.0",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.0"
   }
 }
