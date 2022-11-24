@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && babel --quiet --out-dir dist src --extensions .ts",
+    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "HydratedPig",
@@ -17,5 +18,11 @@
     "eslint": "^8.13.0",
     "eslint-plugin-vue": "^8.6.0",
     "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "typescript": "^4.6.3"
   }
 }
