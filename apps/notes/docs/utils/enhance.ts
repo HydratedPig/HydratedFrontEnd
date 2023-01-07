@@ -1,5 +1,5 @@
+import { NavbarConfig, NavbarGroup, NavLink } from 'vuepress';
 import { Navbar } from '../types/base';
-import { NavbarConfig, NavbarGroup, NavLink } from '@vuepress/theme-default';
 
 const TRAILING_SLASH_RE = /\/$/;
 const removeTrailingSlash = (path: string) =>
