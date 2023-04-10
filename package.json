@@ -11,7 +11,7 @@
     "eslint:build": "pnpm -F @hydrated-packages/eslint-config build",
     "remove:all": "rimraf **/*/node_modules node_modules",
     "clean": "pnpm --parallel --stream clean",
-    "postinstall": "pnpm eslint:build"
+    "postinstall": "pnpm eslint:build && ./shell/postinstall.sh"
   },
   "repository": {
     "type": "git",
