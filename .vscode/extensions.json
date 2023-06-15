@@ -1,3 +1,10 @@
 {
-  "recommendations": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "tamasfe.even-better-toml",
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml",
+    "rust-lang.rust-analyzer"
+  ]
 }
