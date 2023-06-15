@@ -30,3 +30,8 @@ test-report.xml
 # vuepress
 .temp
 .cache
+
+
+# Added by cargo
+
+/target

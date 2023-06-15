@@ -14,6 +14,11 @@ I created a hello_cargo in my demos. And it didn't initialize Git along with a `
 $ cargo new hello_cargo
 $ cd hello_cargo
 ```
+**tips**: if you don't want to initialize repository with any version control system(VCS), you can simply enter the following in you terminal.
+```shell
+$ cargo new hello_cargo --vcs=none
+$ cd hello_cargo
+```
 
 Then I can execute the command in my terminal.
 

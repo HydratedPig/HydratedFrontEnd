@@ -6,6 +6,35 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true
   },
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.procMacro.attributes.enable": true,
+  "rust-analyzer.linkedProjects": [
+    "Cargo.toml",
+    "crates/node_binding/Cargo.toml"
+  ],
+  // https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml#additional-syntax-colors
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "support.type.property-name.table",
+        "settings": {
+          "foreground": "#4EC9B0"
+        }
+      },
+      {
+        "scope": "support.type.property-name.array",
+        "settings": {
+          "foreground": "#569CD6"
+        }
+      },
+      {
+        "scope": "constant.other.time",
+        "settings": {
+          "foreground": "#DCDCAA"
+        }
+      }
+    ]
+  }
 }
