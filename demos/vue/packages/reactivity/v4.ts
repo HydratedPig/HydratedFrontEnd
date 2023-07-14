@@ -15,13 +15,12 @@ function track<T extends Record<string, any>>(target: T, prop: string) {
   depMap.set(prop, deps);
   globalBucket.set(target, depMap);
   activeEffect.deps.push(deps);
-  activeEffect = undefined;
 }
 function trigger<T extends Record<string, any>>(target: T, prop: string) {
   const depMap = globalBucket.get(target);
   if (!depMap) return;
   const deps = depMap.get(prop);
-  deps && deps.forEach((effect) => effect());
+  deps && new Set(deps).forEach((effect) => effect());
 }
 function proxyObj<T extends Record<string, any>>(obj: T) {
   return new Proxy(obj, {
@@ -47,10 +46,11 @@ function cleanup(effect: DepEffect) {
 function effectHook(fn: () => void) {
   const effect: DepEffect = () => {
     cleanup(effect);
+    activeEffect = effect;
     fn();
+    activeEffect = undefined;
   };
   effect.deps = [];
-  activeEffect = effect;
   effect();
 }
 
