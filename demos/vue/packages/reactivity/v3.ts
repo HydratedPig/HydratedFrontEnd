@@ -1,7 +1,6 @@
 /* ----------------------------------- 改进 V3 ----------------------------------- */
 /**
  * new: dep 执行 不在放到微任务里，改为同步执行，且防止 obj 其他值设置的时候触发 effect
- * weakness: 注册函数的会导致一次不必要的执行
  */
 let activeEffect: (() => void) | undefined = undefined;
 function proxyObj(obj: Record<string, any>) {
