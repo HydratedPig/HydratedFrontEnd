@@ -16,7 +16,10 @@ fn main() {
 
     let guess:u32 = match guess.trim().parse() {
       Ok(num) => num,
-      Err(_) => continue,
+      Err(err) => {
+        println!("{}", err);
+        continue;
+      },
     };
 
     println!("Your guessed: {guess}");

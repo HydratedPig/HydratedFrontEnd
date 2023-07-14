@@ -25,7 +25,9 @@
     "noImplicitAny": true,
     // 不允许隐式的 this
     "noImplicitThis": true,
-    "typeRoots" : ["**/*/typings"],
+    "typeRoots": [
+      "**/*/typings"
+    ],
     "plugins": [
       {
         "name": "typescript-plugin-css-modules"
@@ -52,6 +54,13 @@
     "dom.iterable",
     "scripthost"
   ],
-  "include": ["packages/*/src", "apps/*/src", "apps/notes/.vuepress/**/*"],
-  "exclude": ["node-modules", "dist"]
+  "include": [
+    "packages/*/src",
+    "apps/*/src",
+    "apps/notes/.vuepress/**/*"
+  ],
+  "exclude": [
+    "node-modules",
+    "dist"
+  ]
 }
