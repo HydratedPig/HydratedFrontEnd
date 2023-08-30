@@ -1,0 +1,13 @@
+<mxfile host="app.diagrams.net" modified="2023-08-30T08:50:47.898Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="o7FadcZRe6BvpgvAPxjl" version="21.6.5" type="github">
+  <diagram name="Page-1" id="xVjZCe75xI-kXM7xKoEU">
+    <mxGraphModel dx="1434" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5XthUEvxGau-O7Dq5ZKH-1" value="1. 进程调度 及 node 进程间通信&lt;br&gt;2. 责任链模式- 洋葱模型&lt;br&gt;3. 单例模式&lt;br&gt;4. 装饰器&lt;br&gt;5. puppeteer&lt;br&gt;6. 内存泄露&lt;br&gt;7. 消息队列（高并发削峰）&lt;br&gt;8. koajs/eggjs&lt;br&gt;9. restful api&lt;br&gt;10. 数据类型校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="290" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
