@@ -1,8 +1,6 @@
-[TOC]
-
 # JavaScript 基础
 
-## 基本类型
+## [基本类型](./javascript/BasicDataType.md)
 
 ## 对象
 
