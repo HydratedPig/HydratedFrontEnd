@@ -6,6 +6,10 @@ export const feQuickStart: NavbarConfig = [
     link: '/fe-quick-start',
     children: [
       {
+        text: '总览',
+        link: 'README.md',
+      },
+      {
         text: 'Javascript',
         link: 'javascript',
       },
