@@ -80,7 +80,7 @@ const num2 = Number(""); // 0
 const num3 = Number("000011"); // 11
 const num4 = Number(true); // 1
 const numThrowError = Number(1n); // chromium 不会报错，其余浏览器会报错，google 没按规范来，不知道以后会不会倒逼规范(https://tc39.es/ecma262/#sec-tonumber)
-// 对于对象类型，会先转为基本类型 string 再做 number 转换 (https://tc39.es/ecma262/#sec-tonumber)
+// 对于对象类型，会先转为基本类型再做 number 转换 (https://tc39.es/ecma262/#sec-tonumber)
 // 数组
 const numArr = Number([]); // 0
 const numArrL1 = Number([1234]); // 1234
@@ -88,8 +88,16 @@ const numArrLN = Number([1,2,3,...]); // NaN
 // 对象
 const obj = {};
 const numObj = Number(obj) // NaN
-obj.toString = () => '123';
-const numObj2Str = Number(obj) // 123
+obj.toString = () => ({}); 
+Number(obj); // throw Error
+obj.toString = () => '1';
+const numObj2Str = Number(obj); // 1
+obj.valueOf = () => '2';
+const numObjValueOf = Number(obj); // 2
+obj[Symbol.toPrimitive] = () => ({});
+Number(obj); // throw Error
+obj[Symbol.toPrimitive] = () => '3';
+const numObj2Prim = Number(obj); // 3
 
 // parseInt、parseFloat 在对象类型情况下同 Number
 const intHex = parseInt("0xAF", 16); // 175
