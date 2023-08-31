@@ -18,6 +18,10 @@ after that you can run vuepress to launch the blog
 
 # 学习计划
 
+## 前端
+
+## [总览](./apps/notes/docs/fe-quick-start/README.md)
+
 ### FE 三板斧
 
 - [ ] [JavaScript](./apps/notes/docs/fe-quick-start/javascript/README.md)
@@ -37,7 +41,7 @@ after that you can run vuepress to launch the blog
 - [ ] 《计算机网络》
 - [ ] 《浏览器工作原理》
 - [ ] 《WORD MADE POWER》
-- [ ] 《领域驱动设计：软件核心复杂性应对之道》
+- [ ] ~~《领域驱动设计：软件核心复杂性应对之道》~~
 
 ### 模块化
 
@@ -55,10 +59,10 @@ after that you can run vuepress to launch the blog
 
 - [ ] 测试
 
-### Vscode
+## Vscode
 
 - [ ] 源码分析
 
-### GoGoGo
+## GoGoGo
 
-### Rust
+## Rust
