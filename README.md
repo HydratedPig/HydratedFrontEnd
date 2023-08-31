@@ -20,7 +20,7 @@ after that you can run vuepress to launch the blog
 
 ## 前端
 
-## [总览](./apps/notes/docs/fe-quick-start/README.md)
+### [总览](./apps/notes/docs/fe-quick-start/README.md)
 
 ### FE 三板斧
 

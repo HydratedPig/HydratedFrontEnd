@@ -183,7 +183,7 @@ function simpleTag(strings, aValExpression, bValExpression, sumExpression) {
 }
 const untaggedResult = `${a} + ${b} = ${a + b}`;
 const taggedResult = simpleTag`${a} + ${b} = ${a + b}`;
-// ["", " + ", " = ", ""]
+// ['', ' + ', ' = ', '', raw: Array(4)]
 // 6
 // 9
 // 15
