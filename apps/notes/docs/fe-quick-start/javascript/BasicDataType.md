@@ -194,4 +194,200 @@ console.log(taggedResult); // "foobar"
 6. [`String.raw(strings, ...substitutions)`](https://tc39.es/ecma262/#sec-string.raw)，同上，唯一一个内置的标签函数
    > strings 是一个格式正确的模板字符串数组对象，例如 { raw: ['foo', 'bar', 'baz'] }，应该是一个具有 raw 属性的对象，其值是一个类数组的字符串对象。如果 `raw` 是个类数组，会被 `String.raw` [拆成数组](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw)的，当然自定义的字面量标签函数看你需求，你的标签函数你做主
 
-## Symbol
+## [Symbol](./Object.md#symbol)
+
+primitive value that represents a unique, non-String Object property key
+
+> Each possible Symbol value is unique and immutable.
+
+1. 每个 symbol 都有一个叫做 `[[Description]]` 的关联值，这个关联值可以是 `undefined` 或者 `string`
+
+```js
+const sym1 = Symbol();
+const sym2 = Symbol();
+console.log(sym1 === sym2); // false
+
+const symS1 = Symbol("s");
+const symS2 = Symbol("s");
+console.log(symS1 === symS2); // false
+```
+
+2. 不可以作为构造函数初始化
+
+```js
+new Symbol(); // Uncaught TypeError: Symbol is not a constructor
+```
+
+3. [`Symbol.for`](https://tc39.es/ecma262/#sec-symbol.for) 全局 `Symbol` 注册表，可以重用 `Symbol` 变量
+
+```js
+const sym1 = Symbol.for("symbol");
+const sym2 = Symbol.for("symbol");
+console.log(sym1 === sym2); // true
+```
+
+4. [Well-known Symbols](https://tc39.es/ecma262/#table-well-known-symbols)
+
+- `@@asyncIterator`
+
+> 对象异步迭代器的键名，与 `for-await-of` 联合使用
+
+```js
+class Emitter {
+  constructor(max) {
+    this.max = max;
+    this.asyncIdx = 0;
+  }
+
+  async *[Symbol.asyncIterator]() {
+    while (this.asyncIdx < this.max) {
+      yield new Promise((resolve) => resolve(this.asyncIdx++));
+    }
+  }
+}
+async function asyncCount() {
+  let emitter = new Emitter(5);
+  for await (const x of emitter) {
+    console.log(x);
+  }
+}
+asyncCount();
+// 0
+// 1
+// 2
+// 3
+// 4
+```
+
+- `@@hasInstance`
+
+> 这个方法决定了一个对象是否是构造函数的实例，`instanceof` 首先会调用构造函数的这个方法
+
+```js
+class Bar {}
+class Baz extends Bar {
+  static [Symbol.hasInstance]() {
+    return false;
+  }
+}
+
+let b = new Baz();
+console.log(Bar[Symbol.hasInstance](b)); // true
+console.log(b instanceof Bar); // true
+console.log(Baz[Symbol.hasInstance](b)); // false
+console.log(b instanceof Baz); // false
+```
+
+- `@@isConcatSpreadable`
+
+> 如果某对象`[Symbol.isConcatSpreadable]`为真值，在 `Array.prototype.concat` 的调用中该对象将会作为数组被拍平使用
+
+```js
+[].concat({ 1: 0, length: 2 });
+// [{…}]
+[].concat({ 1: 0, length: 2, [Symbol.isConcatSpreadable]: true });
+// (2) [empty, 0]
+```
+
+- `@@iterator`
+
+> 一个返回默认迭代器的方法
+
+```js
+class Emitter {
+  constructor(max) {
+    this.max = max;
+    this.idx = 0;
+  }
+  *[Symbol.iterator]() {
+    while (this.idx < this.max) {
+      yield this.idx++;
+    }
+  }
+}
+function count() {
+  let emitter = new Emitter(5);
+  for (const x of emitter) {
+    console.log(x);
+  }
+}
+count();
+// 0
+// 1
+// 2
+// 3
+// 4
+```
+
+- `@@match(target)`
+
+> 正则表达式默认实现了改方法，被 `String.prototype.match` 调用时会使用该方法
+
+```js
+class FooMatcher {
+  static [Symbol.match](target) {
+    return target.includes("foo");
+  }
+}
+console.log("foobar".match(FooMatcher)); // true
+console.log("barbaz".match(FooMatcher)); // false
+```
+
+- `@@matchAll(target)`
+
+> 迭代器方法，和 `@@match` 类似，被 `String.prototype.matchAll` 调用时会使用该方法
+
+- `@@replace(target, replacement)`
+
+> 和 `@@match` 类似，被 `String.prototype.replace` 调用时会使用该方法
+
+- `@@search(target)`
+
+> 和 `@@match` 类似，被 `String.prototype.search` 调用时会使用该方法
+
+- `@@species`
+
+> 值属性，代表作为创建派生对象的构造函数，我等屁民用不到
+
+```js
+class Baz extends Array {
+  static get [Symbol.species]() {
+    return Array;
+  }
+}
+
+let baz = new Baz();
+console.log(baz instanceof Array); // true
+console.log(baz instanceof Baz); // true
+console.log(baz); // Baz []
+baz = baz.concat("baz");
+console.log(baz instanceof Array); // true
+console.log(baz instanceof Baz); // false
+console.log(baz); // ['baz']
+```
+
+- `@@split(target)`
+
+> 和 `@@match` 类似，被 `String.prototype.split` 调用时会使用该方法
+
+- `@@toPrimitive`
+
+> 定义实例如何返回原始值
+
+- `@@toStringTag`
+
+> 控制对象 `Object.prototype.toString` 的字符串描述
+
+```js
+class Bar {
+  [Symbol.toStringTag] = "Bar";
+}
+let bar = new Bar();
+console.log(bar); // Bar {Symbol(Symbol.toStringTag): 'Bar'}
+console.log(bar.toString()); // [object Bar]
+console.log(bar[Symbol.toStringTag]); // Bar
+```
+
+- `@@unscopables`
+
+> 不做了解，跟 `with` 一起使用的，严格模式不能用 with，略

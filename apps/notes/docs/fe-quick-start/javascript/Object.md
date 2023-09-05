@@ -9,3 +9,5 @@
 ### [BigInt](./BasicDataType.md#bigint)
 
 ### [String](./BasicDataType.md#string)
+
+### [Symbol](./BasicDataType.md#symbol)
