@@ -7,9 +7,9 @@
 
 ## 基础
 
-- [ ] 基本类型
-- [x] 循环
-- [ ] 对象类型
+- [x] [基本类型](./BasicDataType.md)
+- [ ] 循环
+- [ ] [对象类型](./Object.md)
 - [ ] 数组
 - [ ] Map & WeakMap
 - [ ] Set & WeakSet
