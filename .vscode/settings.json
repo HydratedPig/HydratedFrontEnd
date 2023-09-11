@@ -1,8 +1,5 @@
 {
-  "cSpell.words": [
-    "dearqi",
-    "npmjs"
-  ],
+  "cSpell.words": ["dearqi", "npmjs", "preorder"],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
