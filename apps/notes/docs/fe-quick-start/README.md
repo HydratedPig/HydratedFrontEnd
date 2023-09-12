@@ -2,7 +2,7 @@
 
 ## [基本类型](./javascript/BasicDataType.md)
 
-## 对象
+## [对象](./javascript/Object.md)
 
 ## 数组
 
