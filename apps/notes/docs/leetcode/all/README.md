@@ -12,6 +12,8 @@
 
 ## 101-200
 
+## [101. Symmetric Tree](./101-200/101-symmetric-tree.md)
+
 ### [102. Binary Tree Level Order Traversal](./101-200/102-binary-tree-level-order-traversal.md)
 
 ### [107. Binary Tree Level Order Traversal II](./101-200/107-binary-tree-level-order-traversal-II.md)
