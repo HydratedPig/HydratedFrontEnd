@@ -1,3 +1,5 @@
+# 101-200
+
 ## [101. Symmetric Tree](./101-symmetric-tree.md)
 
 ## [102. Binary Tree Level Order Traversal](./102-binary-tree-level-order-traversal.md)
@@ -6,6 +8,6 @@
 
 ## [144. Binary Tree Preorder Traversal](./144-binary-tree-preorder-traversal.md)
 
-## [145. Binary Tree Postorder Traversal](./145-binary-treee-postorder-traversal.md)
+## [145. Binary Tree Postorder Traversal](./145-binary-tree-postorder-traversal.md)
 
 ## [199. Binary Tree Right Side View](./199-binary-tree-right-side-view.md)
