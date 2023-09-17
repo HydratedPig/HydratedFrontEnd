@@ -1,3 +1,5 @@
+# [WEEKLY](../weekly/README.md)
+
 # 所有 leetcode 题解
 
 ## 1-100

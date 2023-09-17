@@ -2,7 +2,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const LEETCODE_PATH = path.resolve(__dirname, './docs/leetcode/all');
+
 const README_FILENAME = 'README.md';
+
+const WEEKLY_PATH = path.resolve(__dirname, './docs/leetcode/weekly');
+const WEEKLY_FILENAME = 'weekly';
 
 function listDir(path) {
   const files = fs.readdirSync(path, { withFileTypes: true });
@@ -44,7 +48,7 @@ function capitalizeFirstChar(name) {
 function getFileLink(subjectName, filepath) {
   return `[${subjectName}](${filepath})`;
 }
-
+// leetcode related
 function handleLeetcodeMd(stream, foldername) {
   const files = listFiles(path.resolve(LEETCODE_PATH, foldername));
   const traverse = (filename) => {
@@ -71,18 +75,51 @@ function handleLeetcodeMd(stream, foldername) {
   folderStream.end('');
 }
 
-function main() {
+function handleWriteAllReadme() {
   const leetcodeFolder = listFolders(LEETCODE_PATH);
-  const README = fs.createWriteStream(
+  const readmeStream = fs.createWriteStream(
     path.resolve(LEETCODE_PATH, README_FILENAME)
   );
 
-  writeHeaders(README, '所有 leetcode 题解', { firstLine: true });
+  const weeklyLink = getFileLink(
+    WEEKLY_FILENAME.toUpperCase(),
+    '../weekly/README.md'
+  );
+  writeHeaders(readmeStream, weeklyLink, { firstLine: true });
+
+  writeHeaders(readmeStream, '所有 leetcode 题解');
   for (const i of leetcodeFolder) {
-    writeHeaders(README, i, 2);
-    handleLeetcodeMd(README, i);
+    writeHeaders(readmeStream, i, 2);
+    handleLeetcodeMd(readmeStream, i);
   }
-  README.end('');
+
+  readmeStream.end('');
+}
+// weekly related
+function handleWeeklyMd(stream, foldername) {
+  const files = listFiles(path.resolve(WEEKLY_PATH, foldername));
+  for (const i of files) {
+    const week = i.replace(/\.md$/, '');
+    const leetcodeLink = getFileLink(`Week ${week}`, `./${foldername}/${i}`);
+    writeHeaders(stream, leetcodeLink, 3);
+  }
+}
+function handleWriteWeeklyReadme() {
+  const weeklyFolder = listFolders(WEEKLY_PATH);
+  const readmeStream = fs.createWriteStream(
+    path.resolve(WEEKLY_PATH, README_FILENAME)
+  );
+
+  writeHeaders(readmeStream, 'WEEKLY', { firstLine: true });
+  for (const i of weeklyFolder) {
+    writeHeaders(readmeStream, i, 2);
+    handleWeeklyMd(readmeStream, i);
+  }
+}
+
+function main() {
+  handleWriteAllReadme();
+  handleWriteWeeklyReadme();
 }
 
 main();

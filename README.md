@@ -37,7 +37,7 @@ after that you can run vuepress to launch the blog
 ### 基础
 
 - [ ] 《JavaScript 设计模式与开发实践》
-- [ ] Leetcode
+- [ ] [Leetcode](./apps/notes/docs/leetcode/all/README.md)
 - [ ] 《计算机网络》
 - [ ] 《浏览器工作原理》
 - [ ] 《WORD MADE POWER》

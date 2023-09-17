@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "notes": "pnpm -F @hydrated-apps/notes docs:dev",
-    "auto:notes:leetcode": "pnpm -F @hydrated-apps/notes leetcode",
+    "auto:leetcode": "pnpm -F @hydrated-apps/notes leetcode",
     "dearqi:dev": "pnpm -F @hydrated-apps/dearqi dev",
     "dearqi:build": "pnpm -F @hydrated-apps/dearqi build",
     "demos:bundle": "pnpm -F @hydrated-demos/rollup bundle",
