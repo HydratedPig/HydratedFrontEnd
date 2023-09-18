@@ -17,6 +17,7 @@
     "Cargo.toml",
     "crates/node_binding/Cargo.toml"
   ],
+  "comment-divider.length": 110,
   // https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml#additional-syntax-colors
   "editor.tokenColorCustomizations": {
     "textMateRules": [
