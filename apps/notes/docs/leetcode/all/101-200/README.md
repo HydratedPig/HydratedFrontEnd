@@ -4,7 +4,11 @@
 
 ## [102. Binary Tree Level Order Traversal](./102-binary-tree-level-order-traversal.md)
 
+## [104. Maximum Depth Of Binary Tree](./104-maximum-depth-of-binary-tree.md)
+
 ## [107. Binary Tree Level Order Traversal II](./107-binary-tree-level-order-traversal-II.md)
+
+## [111. Minimum Depth Of Binary Tree](./111-minimum-depth-of-binary-tree.md)
 
 ## [144. Binary Tree Preorder Traversal](./144-binary-tree-preorder-traversal.md)
 

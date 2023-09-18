@@ -20,7 +20,11 @@
 
 ### [102. Binary Tree Level Order Traversal](./101-200/102-binary-tree-level-order-traversal.md)
 
+### [104. Maximum Depth Of Binary Tree](./101-200/104-maximum-depth-of-binary-tree.md)
+
 ### [107. Binary Tree Level Order Traversal II](./101-200/107-binary-tree-level-order-traversal-II.md)
+
+### [111. Minimum Depth Of Binary Tree](./101-200/111-minimum-depth-of-binary-tree.md)
 
 ### [144. Binary Tree Preorder Traversal](./101-200/144-binary-tree-preorder-traversal.md)
 
@@ -37,3 +41,7 @@
 ## 401-500
 
 ### [429. N Ary Tree Level Order Traversal](./401-500/429-N-ary-tree-level-order-traversal.md)
+
+## 501-600
+
+### [559. Maximum Depth Of N Ary Tree](./501-600/559-maximum-depth-of-n-ary-tree.md)
