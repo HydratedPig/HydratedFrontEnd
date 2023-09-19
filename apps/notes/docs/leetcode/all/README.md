@@ -24,6 +24,8 @@
 
 ### [107. Binary Tree Level Order Traversal II](./101-200/107-binary-tree-level-order-traversal-II.md)
 
+### [110. Balanced Binary Tree](./101-200/110-balanced-binary-tree.md)
+
 ### [111. Minimum Depth Of Binary Tree](./101-200/111-minimum-depth-of-binary-tree.md)
 
 ### [144. Binary Tree Preorder Traversal](./101-200/144-binary-tree-preorder-traversal.md)
@@ -34,7 +36,11 @@
 
 ## 201-300
 
+### [222. Count Complete Tree Nodes](./201-300/222-count-complete-tree-nodes.md)
+
 ### [226. Invert Binary Tree](./201-300/226-invert-binary-tree.md)
+
+### [257. Binary Tree Paths](./201-300/257-binary-tree-paths.md)
 
 ## 301-400
 

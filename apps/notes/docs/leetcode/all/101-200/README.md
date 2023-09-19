@@ -8,6 +8,8 @@
 
 ## [107. Binary Tree Level Order Traversal II](./107-binary-tree-level-order-traversal-II.md)
 
+## [110. Balanced Binary Tree](./110-balanced-binary-tree.md)
+
 ## [111. Minimum Depth Of Binary Tree](./111-minimum-depth-of-binary-tree.md)
 
 ## [144. Binary Tree Preorder Traversal](./144-binary-tree-preorder-traversal.md)
