@@ -22,11 +22,15 @@
 
 ### [104. Maximum Depth Of Binary Tree](./101-200/104-maximum-depth-of-binary-tree.md)
 
+### [106. Construct Binary Tree From Inorder And Postorder Traversal](./101-200/106-construct-binary-tree-from-inorder-and-postorder-traversal.md)
+
 ### [107. Binary Tree Level Order Traversal II](./101-200/107-binary-tree-level-order-traversal-II.md)
 
 ### [110. Balanced Binary Tree](./101-200/110-balanced-binary-tree.md)
 
 ### [111. Minimum Depth Of Binary Tree](./101-200/111-minimum-depth-of-binary-tree.md)
+
+### [112. Path Sum](./101-200/112-path-sum.md)
 
 ### [144. Binary Tree Preorder Traversal](./101-200/144-binary-tree-preorder-traversal.md)
 
