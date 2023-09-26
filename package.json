@@ -6,6 +6,7 @@
   "scripts": {
     "notes": "pnpm -F @hydrated-apps/notes docs:dev",
     "auto:leetcode": "pnpm -F @hydrated-apps/notes leetcode",
+    "notes:script": "pnpm -F @hydrated-apps/notes run:script",
     "dearqi:dev": "pnpm -F @hydrated-apps/dearqi dev",
     "dearqi:build": "pnpm -F @hydrated-apps/dearqi build",
     "demos:bundle": "pnpm -F @hydrated-demos/rollup bundle",

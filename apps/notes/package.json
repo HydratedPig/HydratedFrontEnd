@@ -9,6 +9,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "leetcode": "node leetcode.js",
+    "run:script": "node script/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
