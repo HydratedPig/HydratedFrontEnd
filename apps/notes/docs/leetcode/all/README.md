@@ -56,6 +56,12 @@
 
 ## 501-600
 
+### [501. Find Mode In Binary Search Tree](./501-600/501-find-mode-in-binary-search-tree.md)
+
 ### [513. Find Bottom Left Tree Value](./501-600/513-find-bottom-left-tree-value.md)
 
 ### [559. Maximum Depth Of N Ary Tree](./501-600/559-maximum-depth-of-n-ary-tree.md)
+
+## 601-700
+
+### [654. Maximum Binary Tree](./601-700/654-maximum-binary-tree.md)
