@@ -8,7 +8,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "leetcode": "node leetcode.js",
+    "leetcode": "node addLeetcode.js",
     "run:script": "node script/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,7 @@
   "author": "HydratedPig",
   "license": "ISC",
   "dependencies": {
+    "@hydrated-packages/shared": "workspace:^",
     "@vuepress/client": "2.0.0-beta.53",
     "vue": "^3.2.45"
   },

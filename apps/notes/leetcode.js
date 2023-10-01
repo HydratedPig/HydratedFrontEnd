@@ -1,11 +1,10 @@
 const fs = require('node:fs');
 const path = require('node:path');
-
-const LEETCODE_PATH = path.resolve(__dirname, './docs/leetcode/all');
+const { writeHeaders } = require('./utils');
+const { LEETCODE_PATH, WEEKLY_PATH } = require('./constants');
 
 const README_FILENAME = 'README.md';
 
-const WEEKLY_PATH = path.resolve(__dirname, './docs/leetcode/weekly');
 const WEEKLY_FILENAME = 'weekly';
 
 function listDir(path) {
@@ -23,20 +22,6 @@ function listFiles(path) {
   return list
     .filter((f) => f.isFile() && f.name !== README_FILENAME)
     .map((f) => f.name);
-}
-
-function writeHeaders(stream, str, opt) {
-  let firstLine = false;
-  let level = 1;
-  if (typeof opt === 'object') {
-    firstLine = opt.firstLine;
-    level = opt.level;
-  } else {
-    level = opt;
-  }
-  const levelSharps = Array(level).fill('#').join('');
-  !firstLine && stream.write('\n');
-  stream.write(`${levelSharps} ${str}\n`);
 }
 
 function capitalizeFirstChar(name) {
@@ -122,4 +107,6 @@ function main() {
   handleWriteWeeklyReadme();
 }
 
-main();
+module.exports = {
+  leetcode: main,
+};
