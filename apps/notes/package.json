@@ -18,6 +18,7 @@
   "dependencies": {
     "@hydrated-packages/shared": "workspace:^",
     "@vuepress/client": "2.0.0-beta.53",
+    "@vuepress/theme-default": "^2.0.0-beta.53",
     "vue": "^3.2.45"
   },
   "devDependencies": {
