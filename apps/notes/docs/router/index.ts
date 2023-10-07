@@ -1,6 +1,7 @@
 import { NavbarConfig } from '@vuepress/theme-default';
 import { Navbar } from '../types/base';
 import { enhanceNavbar } from '../utils/enhance';
+import { english } from './english';
 import { feQuickStart } from './feQuickStart';
 import { leetcode } from './leetcode';
 import { readingBook } from './readingBook';
@@ -20,4 +21,5 @@ export const navbar: Navbar = enhanceNavbar([
     link: '/hit-the-pit',
     children: hitThePit,
   },
+  ...english,
 ]);
