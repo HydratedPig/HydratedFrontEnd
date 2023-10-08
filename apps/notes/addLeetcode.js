@@ -20,7 +20,10 @@ function getFileName(fileArr) {
 }
 
 function getLeetcodeLink(titleArr) {
-  return url.resolve(LEETCODE_CN_PROBLEMS_LINK, hyphenArr(titleArr));
+  return url.resolve(
+    LEETCODE_CN_PROBLEMS_LINK,
+    hyphenArr(titleArr).toLowerCase()
+  );
 }
 
 function getTargetFolder(idx) {
@@ -62,7 +65,8 @@ function main() {
     writeHeaders(folderStream, 'C++', 2);
     writeCodeBlock(folderStream, 'c++');
     folderStream.end('');
-    leetcode();
+    folderStream.on('close', leetcode);
+    // leetcode();
     rl.close();
   });
 }
