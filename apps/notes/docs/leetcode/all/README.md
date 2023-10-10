@@ -58,6 +58,8 @@
 
 ### [429. N Ary Tree Level Order Traversal](./401-500/429-N-ary-tree-level-order-traversal.md)
 
+### [450. Delete Node In A Bst](./401-500/450-delete-node-in-a-bst.md)
+
 ## 501-600
 
 ### [501. Find Mode In Binary Search Tree](./501-600/501-find-mode-in-binary-search-tree.md)
@@ -69,3 +71,7 @@
 ## 601-700
 
 ### [654. Maximum Binary Tree](./601-700/654-maximum-binary-tree.md)
+
+## 701-800
+
+### [701. Insert Into A Binary Search Tree](./701-800/701-insert-into-a-binary-search-tree.md)
