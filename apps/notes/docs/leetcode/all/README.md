@@ -26,6 +26,8 @@
 
 ### [107. Binary Tree Level Order Traversal II](./101-200/107-binary-tree-level-order-traversal-II.md)
 
+### [108. Convert Sorted Array To Binary Search Tree](./101-200/108-convert-sorted-array-to-binary-search-tree.md)
+
 ### [110. Balanced Binary Tree](./101-200/110-balanced-binary-tree.md)
 
 ### [111. Minimum Depth Of Binary Tree](./101-200/111-minimum-depth-of-binary-tree.md)
@@ -66,11 +68,15 @@
 
 ### [513. Find Bottom Left Tree Value](./501-600/513-find-bottom-left-tree-value.md)
 
+### [538. Convert Bst To Greater Tree](./501-600/538-convert-bst-to-greater-tree.md)
+
 ### [559. Maximum Depth Of N Ary Tree](./501-600/559-maximum-depth-of-n-ary-tree.md)
 
 ## 601-700
 
 ### [654. Maximum Binary Tree](./601-700/654-maximum-binary-tree.md)
+
+### [669. Trim A Binary Search Tree](./601-700/669-trim-a-binary-search-tree.md)
 
 ## 701-800
 
