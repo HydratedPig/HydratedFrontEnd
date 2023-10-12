@@ -8,4 +8,6 @@
 
 ## [4. Median Of Two Sorted Arrays](./4-median-of-two-sorted-arrays.md)
 
+## [77. Combinations](./77-combinations.md)
+
 ## [94. Binary Tree Inorder Traversal](./94-binary-tree-inorder-traversal.md)

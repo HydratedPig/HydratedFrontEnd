@@ -12,6 +12,8 @@
 
 ### [4. Median Of Two Sorted Arrays](./1-100/4-median-of-two-sorted-arrays.md)
 
+### [77. Combinations](./1-100/77-combinations.md)
+
 ### [94. Binary Tree Inorder Traversal](./1-100/94-binary-tree-inorder-traversal.md)
 
 ## 101-200
@@ -41,6 +43,8 @@
 ### [199. Binary Tree Right Side View](./101-200/199-binary-tree-right-side-view.md)
 
 ## 201-300
+
+### [216. Combination Sum Iii](./201-300/216-combination-sum-iii.md)
 
 ### [222. Count Complete Tree Nodes](./201-300/222-count-complete-tree-nodes.md)
 
