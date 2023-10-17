@@ -18,6 +18,8 @@
 
 ## [112. Path Sum](./112-path-sum.md)
 
+## [131. Palindrome Partitioning](./131-palindrome-partitioning.md)
+
 ## [144. Binary Tree Preorder Traversal](./144-binary-tree-preorder-traversal.md)
 
 ## [145. Binary Tree Postorder Traversal](./145-binary-tree-postorder-traversal.md)

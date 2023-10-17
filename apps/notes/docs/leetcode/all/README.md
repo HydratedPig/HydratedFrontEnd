@@ -6,11 +6,17 @@
 
 ### [1. Two Sum](./1-100/1-two-sum.md)
 
+### [17. Letter Combinations Of A Phone Number](./1-100/17-letter-combinations-of-a-phone-number.md)
+
 ### [2. Add Two Numbers](./1-100/2-add-two-numbers.md)
 
 ### [3. Longest Substring Without Repeating Characters](./1-100/3-longest-substring-without-repeating-characters.md)
 
+### [39. Combination Sum](./1-100/39-combination-sum.md)
+
 ### [4. Median Of Two Sorted Arrays](./1-100/4-median-of-two-sorted-arrays.md)
+
+### [40. Combination Sum Ii](./1-100/40-combination-sum-ii.md)
 
 ### [77. Combinations](./1-100/77-combinations.md)
 
@@ -35,6 +41,8 @@
 ### [111. Minimum Depth Of Binary Tree](./101-200/111-minimum-depth-of-binary-tree.md)
 
 ### [112. Path Sum](./101-200/112-path-sum.md)
+
+### [131. Palindrome Partitioning](./101-200/131-palindrome-partitioning.md)
 
 ### [144. Binary Tree Preorder Traversal](./101-200/144-binary-tree-preorder-traversal.md)
 
